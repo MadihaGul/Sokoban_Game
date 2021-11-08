@@ -1,0 +1,34 @@
+.MyCssClass
+{
+    background-color: blue;
+}
+span{
+    display: grid;
+    grid-template-columns:repeat(19,6ch);
+    grid-template-rows: repeat(16,6ch);
+    align-items: stretch;
+}
+.tile-wall{
+
+    background-image: url("/img/Wall.bmp");
+
+}
+.tile-space{
+    background-image: url("/img/Empty.bmp");
+}
+.tile-goal{
+    background-image: url("/img/GoalPosition.bmp")
+}
+.entity-player{
+    background-image: url("/img/Player.bmp");
+}
+.entity-block{
+    background-image: url("/img/Block.bmp");
+}
+.entity-block-goal{
+    background-image: url("/img/BlockDone.gif");
+}
+.tile-wall,.tile-goal,.tile-space,.entity-block,.entity-block-goal,.entity-player{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
