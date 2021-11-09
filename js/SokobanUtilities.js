@@ -3,6 +3,7 @@ document.onkeydown=arrowKeys;
 let spaceToMove=Tiles.Space;
 let noOfGoals=0;
 let gameOver=false;
+let gameWon=false;
 
 function drawMap(tileMap)
 {   let gameBoard= document.getElementById('mapContainerId');
@@ -46,8 +47,14 @@ function drawMap(tileMap)
 
 function arrowKeys(e)
 {
+    if(gameWon)
+    {
+        alert("Congratulation! You Win");
+        return;
+    }
+
     
-   if(e.repeat || gameOver)
+   if(e.repeat || gameWon)
     {
         return;
     }
@@ -86,8 +93,7 @@ function movePlayer(x,y)
    }
 
    win();
-   /*if (gameOver)
-   {alert("Congratulation! You Win");}*/
+  
 }
 function win()
 {
@@ -96,7 +102,7 @@ function win()
 
     if(chkBlockDone===noOfGoals)
     {
-        gameOver=true;
+        gameWon=true;
         
     }
     

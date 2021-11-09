@@ -20,10 +20,10 @@ span{
     background-image: url("/img/GoalPosition.bmp")
 }
 .entity-player{
-    background-image: url("/img/Player.bmp");
+    background-image: url("/img/Player.jpg");
 }
 .entity-block{
-    background-image: url("/img/Block.bmp");
+    background-image: url("/img/Block.gif");
 }
 .entity-block-goal{
     background-image: url("/img/BlockDone.gif");
